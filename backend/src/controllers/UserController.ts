@@ -2,6 +2,8 @@ import {Request, Response} from 'express'
 import EmailService from "../services/EmailService";
 import User from "../schema/User";
 
+//test
+
 class UserController {
     public async index(req: Request, res: Response): Promise<Response>{
         const users = await User.find()
